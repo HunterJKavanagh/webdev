@@ -179,6 +179,9 @@ figure {
         float: none;
         text-align: center;
     }
+    header>img{
+        float: none;
+    }
     main{
         flex-direction: column;
     }
