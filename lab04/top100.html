@@ -5,8 +5,17 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
     <title>Kavanagh - Lab 4 Top 100</title>
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $("#menu").slicknav({prependTo: "#moblie_menu"})
+        });
+    </script>
 </head>
 <body>
     <header>
@@ -14,6 +23,9 @@
         <h1>4X & Strategy Games</h1>
         <h2>The best 4X/Strategy Games</h2>
     </header>
+    <nav id="moblie_menu">
+
+    </nav>
     <nav id="menu">
         <ul>
             <li><a href="index.html">Home</a></li>

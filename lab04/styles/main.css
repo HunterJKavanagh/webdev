@@ -28,6 +28,7 @@ header {
 
 header>img {
     padding-right: 16px;
+    float: left;
 }
 
 main {
@@ -144,6 +145,12 @@ footer {
 }
 footer>p {
     padding: 1em 0 1em 0;
+}
+
+figure {
+    float: left;
+    padding-right: 2%;
+    text-align: center;
 }
 
 .slicknav_menu{
