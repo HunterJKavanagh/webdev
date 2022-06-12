@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <title>Kavanagh - Lab 4 Home</title>
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+
+    <script>
+        $(document).ready(function() {
+            $("#menu").slicknav({prependTo: "#mobile_menu"})
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <img src="images/banner.jpg" alt="Stellaris">
+        <h1>4X & Strategy Games</h1>
+        <h2>The best 4X/Strategy Games</h2>
+    </header>
+    <nav id="moblie_menu">
+
+    </nav>
+    <nav id="menu">
+        <ul>
+            <li><a class="current" href="index.html">Home</a></li>
+            <li><a href="favorites.html">Favorites</a></li>
+            <li><a href="top100.html">Top 100</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Cool 4X/Strategy Games</h2>
+            <p>
+                This website will be about 4X and Strategy games. I have played a lot of these types of games, and it's one of my favorite genres of games. Although I have played a lot of 4X and Strategy games, I have not played all of them. This website will not be limited to just the ones I have played.
+            </p>
+    
+            <h3> What is a 4X Game</h3>
+            <p>
+                The <strong>four X's</strong> in 4X are explore, expand, exploit, and exterminate. So any game that contains the <strong>four X's</strong> could be considered a 4X game.  
+            </p>
+        </section>
+        <aside>
+            <ul>
+                <li><a href="https://store.steampowered.com/app/281990/Stellaris/">Stellaris</a></li>
+                <li><a href="https://store.steampowered.com/app/8930/Sid_Meiers_Civilization_V/">Civilization 5</a></li>
+                <li><a href="https://store.steampowered.com/app/268500/XCOM_2/">XCOM 2</a></li>
+                <li><a href="https://store.steampowered.com/app/594570/Total_War_WARHAMMER_II/">Total War Warhammer II</a></li>
+            </ul>
+        </aside>
+    </main>
+    <footer>
+        <p>
+            © 2022 Hunter Kavanagh
+        </p>
+    </footer>
+</body>
+</html>

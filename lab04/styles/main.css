@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+html {
+    background-color: aliceblue;
+}
+
+body {
+    width: 98%;
+    max-width: 960px;
+    border: 4px solid black;
+    border-radius: 8px;
+    box-shadow: 8px 8px gray;
+    margin: 10px auto 10px auto;
+    /* padding: 16px 24px 16px 24px; */
+    background-color: white;
+}
+
+header {
+    border-bottom: 2px dashed black;
+    background-color: lightblue;
+    padding: 16px;
+    padding-bottom: 32px;
+}
+
+header>img {
+    padding-right: 16px;
+}
+
+main {
+    padding: 16px 32px 16px 32px;
+    display: flex;
+}
+main>h2:first-of-type::first-letter{
+    font-size: 150%;
+}
+main>p{
+    padding: 8px 0 8px 0;
+}
+main>aside{
+    flex-basis: 25%;
+    /* order: 0; */
+}
+main>section{
+    flex-basis: 70%;
+    /* order: 1; */
+    padding-left: 5%;
+}
+main>section>img{
+    padding-right: 8%;
+}
+main>section ul{
+    padding-left: 24px;
+}
+
+#menu>ul {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+#menu>ul>li{
+    display: block;
+    flex-basis: 25%;
+    list-style-type: none;
+}
+#menu>ul>li>a{
+    display: block;
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+    text-align: center;
+    
+    border: 0px;
+    border-bottom: 2px;
+    border-color: black;
+    border-style: dashed;
+}
+#menu>ul>li>a.current{
+    display: block;
+    width: 100%;
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+    text-align: center;
+    color: black;
+    background-color: white;    
+}
+
+
+aside>ul>li{
+    width: 98%;
+    list-style-type: none;
+    padding: 8px 0px 8px 0px;
+}
+aside>ul>li>a{
+    display: block;
+    width: 100%;
+    padding: 4px;
+    text-decoration: none;
+
+    border: 2px;
+    border-style:dotted;
+    border-color: black;
+}
+
+a:link {
+    color: gray;
+    background-color: lightblue;
+}
+a:hover, a:focus, a:active{
+    color: black;   
+    background-color: white;
+}
+aside a:visited {
+    color: white;
+}
+aside a:visited:hover, a:visited:focus, a:visited:active {
+    color: black;
+}
+#menu a:visited{
+    color: gray;
+    background-color: lightblue;
+}
+#menu a:visited:hover, a:visited:focus{
+    color: black;
+    background-color: white;
+}
+#menu a:visited:focus{
+    color: black;
+    background-color: white;
+}
+
+
+
+
+footer {
+    font-size: smaller;
+    text-align: center;
+    border-top: 2px dashed black;
+    background-color: lightblue;
+    clear: both;
+}
+footer>p {
+    padding: 1em 0 1em 0;
+}
+
+.slicknav_menu{
+    display: none;
+}
+
+
+@media (min-width: 767px) {
+    section{
+        order: 1;
+    }
+    aside{
+        order: 0;
+    }
+}
+
+@media (max-width: 767px) {
+    .slicknav_menu{
+        display: block;
+        background-color: lightblue !important; 
+    }
+    #menu{
+        display: none;
+    }
+    header{
+        float: none;
+        text-align: center;
+    }
+    main{
+        flex-direction: column;
+    }
+    section{
+        width: 95%;
+        order: 0;
+    }
+    aside{
+        width: 95%;
+        order: 1;
+        margin: 0 auto;
+        text-align: center;
+    }
+}
+@media (max-width: 479px) {
+    body{
+        font-size: 85%;
+    }
+}
