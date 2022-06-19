@@ -1,0 +1,26 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavanagh - Lab 5</title>
+</head>
+<body>
+    <h1>Temperature Converter</h1>
+    <script>
+        let tmpf, tmpc
+        do {
+            tmpf = prompt("Enter Fahrenheit Temperature")
+
+            if (isNaN(tmpf) || tmpf < -100 || tmpf > 212) {
+                alert("You Entered: " + tmpf + "\n" + "Enter a Temperature Bettwen -100 and 212")
+            } else {
+                tmpc = (parseFloat(tmpf) - 32) * 5 / 9
+            }
+        } while (isNaN(tmpf) || tmpf < -100 || tmpf > 212)
+
+        document.write("<p>Temperature Fahrenheit: "+ tmpf + "</p>")
+        document.write("<p>Temperature Celsius: " + tmpc + "</p>")
+    </script>
+</body>
+</html>
