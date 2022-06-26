@@ -29,6 +29,8 @@ const clearInputs = () => {
     $('#input-temp').value = '';
     $('#output-temp').value = '';
     $('#input-temp-validation').textContent = '';
+    $('#input-temp').classList.remove('border');
+    $('#input-temp').classList.remove('border-danger');
     $('#input-temp').focus();
 }
 
@@ -37,9 +39,15 @@ const convert = (toFahr) => {
 
     if (isNaN(tmpi)) {
         $('#input-temp-validation').textContent = `${tmpi} is not a number`;
+        $('#input-temp').classList.add('border');
+        $('#input-temp').classList.add('border-danger');
         $('#output-temp').value = '';
+        $('#input-temp').focus();
     } else {
         $('#input-temp-validation').textContent = '';
+        $('#input-temp').classList.remove('border');
+        $('#input-temp').classList.remove('border-danger');
+
 
         if ($('#to-celsius').checked) {
             $('#output-temp').value = (tmpi-32) * 5/9
