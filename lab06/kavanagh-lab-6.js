@@ -42,7 +42,6 @@ const convert = (toFahr) => {
         $('#input-temp').classList.add('border');
         $('#input-temp').classList.add('border-danger');
         $('#output-temp').value = '';
-        $('#input-temp').focus();
     } else {
         $('#input-temp-validation').textContent = '';
         $('#input-temp').classList.remove('border');
@@ -50,9 +49,10 @@ const convert = (toFahr) => {
 
 
         if ($('#to-celsius').checked) {
-            $('#output-temp').value = (tmpi-32) * 5/9
+            $('#output-temp').value = ((tmpi-32) * 5/9).toFixed(1)
         } else {
-            $('#output-temp').value = tmpi * 9/5 + 32
+            $('#output-temp').value = (tmpi * 9/5 + 32).toFixed(1)
         }
     }
+    $('#input-temp').focus();
 }
