@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavanagh - Lab 7</title>
+
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <main class="col-lg-6 mx-auto text-center border border-secondary">
+        <h1>Fahrenheit & Celsius Converter</h1>
+        <hr>
+        <div class="custom-control custom-radio">
+            <input type="radio" name="convert-temp" id="to-celsius" value="convert-to-celsius" class="custom-control-inpute" checked>
+            <label for="to-celsius" class="custom-control-lable">Fahrenheit to Celsius</label>
+        </div>
+        <div class="custom-control custom-radio">
+            <input type="radio" name="convert-temp" id="to-fahrenheit" value="convert-to-fahrenheit" class="custom-control-inpute">
+            <label for="to-fahrenheit" class="custom-control-lable">Celsius to Fahrenheit</label>
+        </div>
+
+        <div class="mx-auto w-50 mt-3 ">
+            <div class="form-group">
+                <label for="input-temp" id="input-lable">Enter Temperature in Fahrenheit</label>
+                <input class="from-control text-center" type="text" name="input-temp" id="input-temp">
+                <small class="text-danger font-weight-bold" id="input-temp-validation"></small>
+            </div>
+            <div class="form-group">
+                <label for="output-temp" id="output-lable">Converted Temperature in Celsius</label>
+                <input class="from-control text-center" type="text" name="output-temp" id="output-temp" disabled>
+            </div>
+            <div class="form-group">
+                <button name="convert-temp-button" id="convert-temp-button"   value="Convert Temperature" class="btn w-100 mb-1 btn-primary">Convert Temperature</button>
+                <br>
+                <button id="clear-inputs" value="Clear" class="btn w-100 btn-secondary">Rest</button>
+            </div>
+        </div>
+    </main>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="kavanagh-lab-7.js"></script>
+</body>
+</html>
