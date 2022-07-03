@@ -16,7 +16,7 @@ $(document).ready(function() {
 
     // trigger the click event on the clear button 
     // when the input button is double clicked
-    $('#inpute-temp').dblclick(function() {
+    $('#input-temp').dblclick(function() {
         $('#clear-inputs').click();
     });
 
