@@ -83,6 +83,7 @@ $(document).ready(function(){
             makeValid(txtPhone);
         }
 
+        // Checks if a contact method has been selected
         let checkOptions = $(':radio:checked');
         if(checkOptions.length === 0) {
             $(':radio').addClass('is-invalid');
@@ -93,12 +94,14 @@ $(document).ready(function(){
             $('#contact-message').text("")
         }
 
+        // Prevents the submit event
         if (isValid == false) {
             evt.preventDefault();
             txtArrivalDate.select().focus();
         }
     })
 
+    // Resets everything if the rest button is clicked
     $('#reset-reservation-form').on('click', () => {
         $('input[type="text"').val('');
         $('input[type="checkbox"]').prop('checked', false);
