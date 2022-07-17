@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavanagh lab 9 - Saved Profile</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <main class="col-sm-8 mx-auto text-center mt-3 border">
+        <H1>Saved Info</H1>
+        <hr>
+        <!-- Writes the session data to the page -->
+        <script>
+            const strings = sessionStorage.lab9info.split('|');
+            strings.pop();
+            document.write(`<dl>`);
+            // loops thought all the elements and prints the field value pair for each one
+            for (let i in strings) {
+                let elements = strings[i].split('=');
+                let field = elements[0].replaceAll('-', ' ');
+                let value = elements[1];
+
+                document.write(`<dt style="text-transform: capitalize">${field}:</dt>`);
+                document.write(`<dd>${value}</dd>`);
+            }
+            document.write(`</dl>`);
+        </script>
+    </main>
+</body>
+</html>

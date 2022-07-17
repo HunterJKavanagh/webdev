@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kavanagh - Lab 9</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+</head>
+<body>
+    <main class="col-sm-6 mx-auto text-center mt-3 border">
+        <h1>Form</h1>
+        <hr>
+
+        <!-- Course -->
+        <div class="form-group row">
+            <label for="course" class="col-form-label col-sm-4">Course:</label>
+            <div>
+                <input id="course" type="text" name="course" class="form-control" placeholder="CSC 150">
+
+                <small type="text" class="text-danger font-weight-bold col-sm-2"></small>
+            </div>
+        </div>
+        <!-- Email -->
+        <div class="form-group row">
+            <label for="email" class="col-form-label col-sm-4">Email:</label>
+            <div>
+                <input id="email" type="text" name="Email" class="form-control" placeholder="name@school.edu">
+            
+                <small type="text" class="text-danger font-weight-bold"></small>
+            </div>
+        </div>
+        <!-- Zip Code -->
+        <div class="form-group row">
+            <label for="zip" class="col-form-label col-sm-4">Zip Code:</label>
+            <div>
+                <input id="zip" type="text" name="zip-code" class="form-control" placeholder="12345-1234">
+            
+                <small type="text" class="text-danger font-weight-bold"></small>
+            </div>
+        </div>
+        <!-- Date of Birth -->
+        <div class="form-group row">
+            <label for="dob" class="col-form-label col-sm-4">Date of Birth:</label>
+            <div>
+                <input id="dob" type="text" name="date-of-birth" class="form-control" placeholder="02/24/2000">
+            
+                <small type="text" class="text-danger font-weight-bold"></small>
+            </div>
+        </div>
+
+        <button id="validate-btn" class="btn btn-primary form-control">Validate</button>
+        
+        <p id="valid-msg" class="alert-success font-weight-bold mt-2">
+            
+        </p>
+        
+    </main>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="kavanagh-lab-9.js"></script>
+</body>
+</html>
