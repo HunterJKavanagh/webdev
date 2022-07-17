@@ -73,6 +73,7 @@ $(document).ready(function(){
         course.select().focus();
 
         // if all fields are valid gather data and store it is a session variable
+        // and go to progile page
         if (isValid) {
             let lab9info = []
             lab9info['course'] = course.val().trim();
@@ -85,9 +86,9 @@ $(document).ready(function(){
             for (let i in lab9info) {
                 sessionStorage.lab9info += i + '=' + lab9info[i] + '|';
             }
-        }
 
-        // go to profile page
-        location.href = 'profile.html';
+            // go to profile page
+            location.href = 'profile.html';
+        }
     });
 });
