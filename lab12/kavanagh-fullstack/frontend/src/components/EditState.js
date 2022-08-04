@@ -17,7 +17,7 @@ const EditState = () => {
             Name: name,
             Population: population,
             GDP: gdp,
-            Area: 100,
+            Area: area,
         });
         navigate("/");
     }
