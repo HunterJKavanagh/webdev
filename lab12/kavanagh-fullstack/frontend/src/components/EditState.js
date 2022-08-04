@@ -24,9 +24,9 @@ const EditState = () => {
     const getStateByID = async () => {
         const response = await axios.get(`http://localhost:5000/midwest-states/${id}`);
         setName(response.data.name);
-        setName(response.data.population);
-        setName(response.data.gdp);
-        setName(response.data.area);
+        setPopulation(response.data.population);
+        setGDP(response.data.gdp);
+        setArea(response.data.area);
     }
     useEffect(() => {
         getStateByID().then(m => console.log("State successfully retrived"));
