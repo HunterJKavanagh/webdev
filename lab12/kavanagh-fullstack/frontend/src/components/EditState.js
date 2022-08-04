@@ -14,19 +14,19 @@ const EditState = () => {
 
     const updateState = async () => {
         await axios.patch(`http://localhost:5000/midwest-states/${id}`, {
-            name: name,
-            population: population,
-            gdp: gdp,
-            area: area,
+            Name: name,
+            Population: population,
+            GDP: gdp,
+            Area: 100,
         });
         navigate("/");
     }
     const getStateByID = async () => {
         const response = await axios.get(`http://localhost:5000/midwest-states/${id}`);
-        setName(response.data.name);
-        setPopulation(response.data.population);
-        setGDP(response.data.gdp);
-        setArea(response.data.area);
+        setName(response.data.Name);
+        setPopulation(response.data.Population);
+        setGDP(response.data.GDP);
+        setArea(response.data.Area);
     }
     useEffect(() => {
         getStateByID().then(m => console.log("State successfully retrived"));

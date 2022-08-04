@@ -13,10 +13,10 @@ const AddState = () => {
 
     const saveState = async () => {
         await axios.post('http://localhost:5000/midwest-states', {
-            name: name,
-            population: population,
-            gdp: gdp,
-            area: area,
+            Name: name,
+            Population: population,
+            GDP: gdp,
+            Area: area,
         });
         navigate('/');
     }
