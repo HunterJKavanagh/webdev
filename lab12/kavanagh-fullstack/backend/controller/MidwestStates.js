@@ -20,7 +20,6 @@ export const getStateById = async (req, res) => {
 }
 export const createState = async (req, res) => {
     try {
-        await State.create(req.body);
         res.json({message: 'State created'});
     } catch (error) {
         res.json({message: error.message});

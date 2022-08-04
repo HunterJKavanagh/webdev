@@ -20,6 +20,7 @@ const EditState = () => {
             Area: area,
         });
         navigate("/");
+        await axios.patch("http://localhost:5000/midwest-states/1", {Name: "qq"});
     }
     const getStateByID = async () => {
         const response = await axios.get(`http://localhost:5000/midwest-states/${id}`);
