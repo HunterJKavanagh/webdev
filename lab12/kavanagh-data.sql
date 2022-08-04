@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 01, 2022 at 04:21 PM
+-- Generation Time: Aug 04, 2022 at 06:22 PM
 -- Server version: 10.4.24-MariaDB
--- PHP Version: 7.4.29
+-- PHP Version: 8.1.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -40,19 +40,21 @@ CREATE TABLE `midwest-states` (
 --
 
 INSERT INTO `midwest-states` (`ID`, `Name`, `Population`, `GDP`, `Area`) VALUES
-(0, 'NE', 1961504, 150388, 77358),
-(1, 'KY', 4467673, 234498, 40408),
-(2, 'OK', 3956971, 206750, 69899),
-(3, 'WI', 5822434, 365931, 65498),
-(4, 'SD', 884659, 61205, 77116),
-(5, 'OH', 11689100, 736449, 44825),
-(6, 'ND', 762062, 63386, 70761),
-(7, 'MN', 10077331, 568413, 96716),
-(8, 'MO', 6137428, 359952, 69715),
-(9, 'KS', 2913314, 192303, 82278),
-(10, 'IA', 3155070, 219841, 58295),
-(11, 'IL', 12741080, 938347, 57914),
-(12, 'IN', 6732219, 420339, 36418);
+(1, 'NE', 1961504, 150388, 77358),
+(2, 'KY', 4467673, 234498, 40408),
+(3, 'OK', 3956971, 206750, 69899),
+(4, 'WI', 5822434, 365931, 65498),
+(5, 'SD', 884659, 61205, 77116),
+(6, 'OH', 11689100, 736449, 44825),
+(7, 'ND', 762062, 63386, 70761),
+(8, 'MN', 10077331, 568413, 96716),
+(9, 'MO', 6137428, 359952, 69715),
+(10, 'KS', 2913314, 192303, 82278),
+(11, 'IA', 3155070, 219841, 58295),
+(12, 'IL', 12741080, 938347, 57914),
+(13, 'IN', 6732219, 420339, 36418),
+(14, '', 0, 0, 0),
+(15, '', 0, 0, 0);
 
 --
 -- Indexes for dumped tables
@@ -63,6 +65,16 @@ INSERT INTO `midwest-states` (`ID`, `Name`, `Population`, `GDP`, `Area`) VALUES
 --
 ALTER TABLE `midwest-states`
   ADD PRIMARY KEY (`ID`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `midwest-states`
+--
+ALTER TABLE `midwest-states`
+  MODIFY `ID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
